@@ -57,6 +57,7 @@ public class PongFactory implements EntityFactory {
                 .viewWithBBox(new Rectangle(20, 60, Color.LIGHTGRAY))
                 .with(new CollidableComponent(true))
                 .with(physicsComponent)
+                .with(new BatComponent())
                 .build();
     }
 }
